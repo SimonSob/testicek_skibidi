@@ -1,0 +1,60 @@
+    <!-- Hlavni web. stranka aplikace -->
+    <!DOCTYPE html>
+    <html lang="cs">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cinkacka</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="manifest" href="manifest.json">
+        <script src="app.js"></script>
+    </head>
+    <body>
+        
+        
+        <div id="strana1" class="page_visible">
+                
+            <h1>Pribeh</h1>
+
+            <ul>
+                <label for="zacatek">zacatek pribehu</label>
+                <li id="zacatek">
+                    <p>neni nic</p>
+                </li>
+                
+                <label for="stred">stred pribehu</label>
+                <li id="stred">
+                    <p>neni nic</p>
+                </li>
+                
+
+                <label for="zaver">zaverr</label>
+                <li id="zaver">
+                    <p>neni nic</p>
+
+                </li>
+            </ul>
+        
+            <button type="button" onclick="ZmenStranku2()">Nastaveni</button>
+        </div>
+        <div id="strana2" class="page">
+        
+            <h1>Nastaveni</h1>
+            
+            <input type="text" id="zadejtext">
+
+            <select name="vyber" id="vyber">
+                <option value="1" id="vyber1">Zacatek pribehu</option>
+                <option value="2" id="vyber2">stred pribehu</option>
+                <option value="3" id="vyber3">zaver pribehu</option>
+            </select>
+
+            <button id="ulozit" onclick="uloz()">uloz</button>
+
+            <button type="button" onclick="ZmenStranku1()">Zpět</button>
+        </div>
+        
+        
+        
+    </body>
+    </html>
